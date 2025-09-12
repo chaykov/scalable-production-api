@@ -5,18 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eff10c0e-5efe-4d83-8c13-38dce461ab29" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/config/logger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/auth.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/auth.routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/cookies.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/format.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/jwt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validations/auth.validation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eslint.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/eslint.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/auth.services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/combined.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/combined.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/auth.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/auth.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/auth.routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1757688874199</updated>
       <workItem from="1757688875382" duration="3157000" />
-      <workItem from="1757695343442" duration="5457000" />
+      <workItem from="1757695343442" duration="9510000" />
     </task>
     <servers />
   </component>
