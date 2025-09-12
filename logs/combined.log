@@ -1,0 +1,19 @@
+{"level":"info","message":"Starting app","service":"scalable-api","timestamp":"2025-09-12T17:54:29.605Z"}
+{"level":"info","message":"::1 - - [12/Sep/2025:17:54:29 +0000] \"GET / HTTP/1.1\" 200 22 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"scalable-api","timestamp":"2025-09-12T17:54:29.620Z"}
+{"level":"info","message":"::1 - - [12/Sep/2025:17:54:29 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"scalable-api","timestamp":"2025-09-12T17:54:29.660Z"}
+{"level":"info","message":"Starting app","service":"scalable-api","timestamp":"2025-09-12T17:55:03.362Z"}
+{"level":"info","message":"::1 - - [12/Sep/2025:17:55:03 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"scalable-api","timestamp":"2025-09-12T17:55:03.365Z"}
+{"level":"info","message":"Starting app","service":"scalable-api"}
+{"level":"info","message":"::1 - - [12/Sep/2025:17:56:18 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"scalable-api"}
+{"level":"info","message":"Starting app","service":"scalable-api"}
+{"level":"info","message":"::1 - - [12/Sep/2025:18:04:08 +0000] \"GET / HTTP/1.1\" 200 22 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"Starting app","service":"scalable-api"}
+{"level":"info","message":"::1 - - [12/Sep/2025:18:05:14 +0000] \"GET / HTTP/1.1\" 200 22 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [12/Sep/2025:18:05:18 +0000] \"GET /api HTTP/1.1\" 200 38 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [12/Sep/2025:18:05:30 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [12/Sep/2025:18:06:02 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 31 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [12/Sep/2025:18:24:47 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 200 31 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [12/Sep/2025:18:25:49 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 92 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [12/Sep/2025:18:26:44 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 144 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"User registered successfully: test@wp.pl","service":"scalable-api"}
+{"level":"info","message":"::1 - - [12/Sep/2025:18:27:11 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 94 \"-\" \"HTTPie\"","service":"scalable-api"}
