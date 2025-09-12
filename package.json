@@ -1,25 +1,36 @@
 {
-  "name": "scalable-production-api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node --watch src/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chaykov/scalable-production-api.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
-  "bugs": {
-    "url": "https://github.com/chaykov/scalable-production-api/issues"
-  },
-  "homepage": "https://github.com/chaykov/scalable-production-api#readme",
-  "dependencies": {
-    "dotenv": "^17.2.2",
-    "express": "^5.1.0"
-  }
+    "name": "scalable-production-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "node --watch src/index.js",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "format": "prettier --write .",
+        "format:check": "prettier --check ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chaykov/scalable-production-api.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "module",
+    "bugs": {
+        "url": "https://github.com/chaykov/scalable-production-api/issues"
+    },
+    "homepage": "https://github.com/chaykov/scalable-production-api#readme",
+    "dependencies": {
+        "dotenv": "^17.2.2",
+        "express": "^5.1.0"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.35.0",
+        "eslint": "^9.35.0",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.4",
+        "prettier": "^3.6.2"
+    }
 }
