@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  # Application service for production
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: scalable-api-prod
+    ports:
+      - "${PORT:-3000}:3000"
+#    environment:
+#      - NODE_ENV=production
+#      - PORT=3000
+#      - LOG_LEVEL=info
+#      # Database URL should be provided via environment variables in production
+#      - DATABASE_URL=${DATABASE_URL}
+#      - USE_NEON_LOCAL=false
+#      # Add other production environment variables as needed
+#      - JWT_SECRET=${JWT_SECRET:-}
+#      - API_KEYS=${API_KEYS:-}
+    env_file:
+      - .env.production
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "const http=require('http');const options={hostname:'localhost',port:3000,path:'/health',timeout:2000};const req=http.request(options,(r)=>{process.exit(r.statusCode===200?0:1)});req.on('error',()=>process.exit(1));req.end();"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    # Resource limits for production
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
+        reservations:
+          cpus: '0.5'
+          memory: 256M
+    # Security options
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    tmpfs:
+      - /tmp:noexec,nosuid,size=100m
+    cap_drop:
+      - ALL
+    cap_add:
+      - SETUID
+      - SETGID
+
+#networks:
+#  default:
+#    name: scalable-api-prod-network
+
+networks:
+  scalable-api-prod-network:
+    driver: bridge

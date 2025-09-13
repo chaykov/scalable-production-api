@@ -1,0 +1,70 @@
+version: '3.8'
+
+services:
+  # Neon Local - Creates ephemeral branches for development
+  neon-local:
+    image: neondatabase/neon_local:latest
+    container_name: neon-local-dev
+    ports:
+      - "5432:5432"
+#    environment:
+#      NEON_API_KEY: ${NEON_API_KEY}
+#      NEON_PROJECT_ID: ${NEON_PROJECT_ID}
+#      PARENT_BRANCH_ID: ${PARENT_BRANCH_ID}
+#      DELETE_BRANCH: ${DELETE_BRANCH:-true}
+    env_file:
+      - .env.development
+    volumes:
+      # Optional: Persist branch per git branch (uncomment if needed)
+       - ./.neon_local/:/tmp/.neon_local
+       - ./.git/HEAD:/tmp/.git/HEAD:ro,consistent
+    restart: unless-stopped
+    healthcheck:
+#      test: ["CMD-SHELL", "pg_isready -h localhost -p 5432"]
+      test: ["CMD", "pg_isready", "-h", "localhost", "-p", "5432", "-U", "neon"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+
+  # Application service
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    container_name: scalable-api-dev
+    ports:
+      - "${PORT:-3000}:3000"
+#    environment:
+#      - NODE_ENV=development
+#      - PORT=3000
+#      - LOG_LEVEL=debug
+#      - DATABASE_URL=postgres://neon:npg@neon-local:5432/main?sslmode=require
+#      - USE_NEON_LOCAL=true
+    env_file:
+      - .env.development
+    volumes:
+#      # Mount source code for hot reload in development
+#      - ./src:/app/src:ro
+#      - ./package.json:/app/package.json:ro
+#      - ./package-lock.json:/app/package-lock.json:ro
+#      # Exclude node_modules to avoid conflicts
+#      - /app/node_modules
+      - .:/app
+      - /app/node_modules
+      - ./logs:/app/logs
+    depends_on:
+      neon-local:
+        condition: service_healthy
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+
+#networks:
+#  default:
+#    name: scalable-api-dev-network
+
+networks:
+  scalable-api-dev-network:
+    driver: bridge

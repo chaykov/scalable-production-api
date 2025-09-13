@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eff10c0e-5efe-4d83-8c13-38dce461ab29" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/config/arcjet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware/security.middleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/combined.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/combined.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/dev.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/prod.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/auth.services.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth.services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/database.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +64,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -81,7 +85,7 @@
       <updated>1757688874199</updated>
       <workItem from="1757688875382" duration="3157000" />
       <workItem from="1757695343442" duration="10251000" />
-      <workItem from="1757751522685" duration="2121000" />
+      <workItem from="1757751522685" duration="6088000" />
     </task>
     <servers />
   </component>
