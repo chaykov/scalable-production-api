@@ -5,12 +5,14 @@ This guide explains how to run the Scalable Production API using Docker with dif
 ## 🏗️ Architecture Overview
 
 ### Development Environment
+
 - **Application**: Dockerized Node.js app with hot reload
 - **Database**: Neon Local proxy creating ephemeral branches
 - **Connection**: PostgreSQL driver through Neon Local
 - **Benefits**: Fresh database branches, no manual cleanup, isolated development
 
 ### Production Environment
+
 - **Application**: Optimized Docker container
 - **Database**: Neon Cloud Database (serverless)
 - **Connection**: Neon serverless driver
@@ -19,18 +21,20 @@ This guide explains how to run the Scalable Production API using Docker with dif
 ## 📋 Prerequisites
 
 ### Required
+
 - Docker and Docker Compose
 - Neon account with a project created
 - Node.js 20+ (for local development without Docker)
 
 ### Neon Setup
+
 1. Create a [Neon account](https://neon.tech)
 2. Create a new project
 3. Get your credentials:
-   - **NEON_API_KEY**: From your Neon dashboard → Account Settings → API Keys
-   - **NEON_PROJECT_ID**: From your Neon dashboard → Project Settings → General
-   - **PARENT_BRANCH_ID**: Usually your main branch ID (default branch)
-   - **DATABASE_URL**: Your production connection string
+    - **NEON_API_KEY**: From your Neon dashboard → Account Settings → API Keys
+    - **NEON_PROJECT_ID**: From your Neon dashboard → Project Settings → General
+    - **PARENT_BRANCH_ID**: Usually your main branch ID (default branch)
+    - **DATABASE_URL**: Your production connection string
 
 ## 🚀 Development Setup (Neon Local)
 
@@ -91,14 +95,15 @@ To persist database branches per Git branch, uncomment these lines in `docker-co
 
 ```yaml
 volumes:
-  - ./.neon_local/:/tmp/.neon_local
-  - ./.git/HEAD:/tmp/.git/HEAD:ro,consistent
+    - ./.neon_local/:/tmp/.neon_local
+    - ./.git/HEAD:/tmp/.git/HEAD:ro,consistent
 ```
 
 And set:
+
 ```yaml
 environment:
-  DELETE_BRANCH: "false"
+    DELETE_BRANCH: 'false'
 ```
 
 ## 🏭 Production Setup (Neon Cloud)
@@ -132,12 +137,14 @@ docker-compose -f docker-compose.prod.yml up --build
 ### 3. Production Deployment Examples
 
 #### Using Docker Swarm
+
 ```bash
 # Deploy to swarm
 docker stack deploy -c docker-compose.prod.yml scalable-api
 ```
 
 #### Using Environment Variables
+
 ```bash
 # Set environment variables (recommended for CI/CD)
 export DATABASE_URL="postgres://username:password@host.neon.tech/dbname?sslmode=require"
@@ -157,7 +164,7 @@ The application automatically selects the appropriate database driver:
 if (process.env.USE_NEON_LOCAL === 'true') {
     // Uses postgres driver with SSL certificate handling
     const client = postgres(DATABASE_URL, {
-        ssl: { rejectUnauthorized: false }
+        ssl: { rejectUnauthorized: false },
     });
 }
 
@@ -170,14 +177,14 @@ else {
 
 ### Environment Variables
 
-| Variable | Development | Production | Description |
-|----------|-------------|------------|-------------|
-| `NODE_ENV` | `development` | `production` | Environment mode |
-| `USE_NEON_LOCAL` | `true` | `false` | Toggle between drivers |
-| `DATABASE_URL` | Neon Local format | Neon Cloud format | Database connection |
-| `NEON_API_KEY` | Required | Not needed | Neon API access |
-| `NEON_PROJECT_ID` | Required | Not needed | Your Neon project |
-| `PARENT_BRANCH_ID` | Required | Not needed | Branch to fork from |
+| Variable           | Development       | Production        | Description            |
+| ------------------ | ----------------- | ----------------- | ---------------------- |
+| `NODE_ENV`         | `development`     | `production`      | Environment mode       |
+| `USE_NEON_LOCAL`   | `true`            | `false`           | Toggle between drivers |
+| `DATABASE_URL`     | Neon Local format | Neon Cloud format | Database connection    |
+| `NEON_API_KEY`     | Required          | Not needed        | Neon API access        |
+| `NEON_PROJECT_ID`  | Required          | Not needed        | Your Neon project      |
+| `PARENT_BRANCH_ID` | Required          | Not needed        | Branch to fork from    |
 
 ### Connection Strings
 
@@ -194,6 +201,7 @@ DATABASE_URL=postgres://username:password@host.neon.tech/dbname?sslmode=require
 ### Common Issues
 
 #### 1. Neon Local Connection Failed
+
 ```bash
 # Check if Neon Local is healthy
 docker-compose -f docker-compose.dev.yml ps
@@ -206,16 +214,18 @@ docker-compose -f docker-compose.dev.yml restart
 ```
 
 #### 2. SSL Certificate Issues
+
 The development setup handles self-signed certificates automatically. If you see SSL errors:
 
 ```javascript
 // This is already configured in database.js
 ssl: {
-    rejectUnauthorized: false // Allows Neon Local self-signed certs
+    rejectUnauthorized: false; // Allows Neon Local self-signed certs
 }
 ```
 
 #### 3. Branch Creation Failed
+
 ```bash
 # Check your Neon credentials
 echo $NEON_API_KEY
@@ -226,13 +236,14 @@ echo $NEON_PROJECT_ID
 ```
 
 #### 4. Port Conflicts
+
 If port 5432 or 3000 is already in use:
 
 ```yaml
 # Change ports in docker-compose files
 ports:
-  - "15432:5432"  # Use different host port
-  - "13000:3000"  # Use different host port
+    - '15432:5432' # Use different host port
+    - '13000:3000' # Use different host port
 ```
 
 ### Health Checks
@@ -265,11 +276,13 @@ scalable-production-api/
 ## 🔐 Security Notes
 
 ### Development
+
 - Neon Local uses self-signed certificates (handled automatically)
 - Database branches are ephemeral and cleaned up on container stop
 - No sensitive data persists between development sessions
 
 ### Production
+
 - Use environment variables for secrets, never hardcode
 - Neon Cloud provides built-in SSL/TLS encryption
 - Production container runs as non-root user

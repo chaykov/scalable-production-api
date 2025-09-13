@@ -5,15 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eff10c0e-5efe-4d83-8c13-38dce461ab29" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controllers/users.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/users.routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/users.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.neon_local/.branches" beforeDir="false" afterPath="$PROJECT_DIR$/.neon_local/.branches" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/combined.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/combined.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README-Docker.md" beforeDir="false" afterPath="$PROJECT_DIR$/README-Docker.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WARP.md" beforeDir="false" afterPath="$PROJECT_DIR$/WARP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drizzle.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/drizzle.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/arcjet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/arcjet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/database.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/logger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/logger.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/auth.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/auth.services.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/users.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/users.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/auth.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/auth.middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/security.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/security.middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/user.mode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/user.mode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/auth.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/auth.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/users.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/users.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/auth.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/users.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/users.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/cookies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/cookies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/format.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/format.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/jwt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/jwt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validations/auth.validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/validations/auth.validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validations/users.validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/validations/users.validation.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +80,7 @@
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.dev:docker # Runs ./scripts/dev.sh.executor": "Run",
     "settings.editor.selected.configurable": "preferences.fileTypes",
     "to.speed.mode.migration.done": "true",
     "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
@@ -79,6 +96,24 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/scripts" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev:docker # Runs ./scripts/dev.sh" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev:docker" />
+      </scripts>
+      <arguments value="    # Runs ./scripts/dev.sh" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev:docker # Runs ./scripts/dev.sh" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -96,7 +131,7 @@
       <updated>1757688874199</updated>
       <workItem from="1757688875382" duration="3157000" />
       <workItem from="1757695343442" duration="10251000" />
-      <workItem from="1757751522685" duration="9548000" />
+      <workItem from="1757751522685" duration="10498000" />
     </task>
     <servers />
   </component>
