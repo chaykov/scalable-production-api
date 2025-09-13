@@ -269,3 +269,6 @@
 {"level":"info","message":"User admin2@wp.pl authenticated successfully","service":"scalable-api"}
 {"level":"info","message":"Getting users...","service":"scalable-api"}
 {"level":"info","message":"::ffff:192.168.65.1 - - [13/Sep/2025:11:13:49 +0000] \"GET /api/users HTTP/1.1\" 200 770 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [13/Sep/2025:11:33:14 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"-\"","service":"scalable-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [13/Sep/2025:11:33:14 +0000] \"GET /api HTTP/1.1\" 200 38 \"-\" \"-\"","service":"scalable-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [13/Sep/2025:11:33:14 +0000] \"GET /nonexistent HTTP/1.1\" 404 27 \"-\" \"-\"","service":"scalable-api"}
