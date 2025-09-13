@@ -60,3 +60,99 @@
 {"level":"info","message":"::1 - - [12/Sep/2025:21:08:12 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 109 \"-\" \"HTTPie\"","service":"scalable-api"}
 {"level":"info","message":"User signed out successfully","service":"scalable-api"}
 {"level":"info","message":"::1 - - [12/Sep/2025:21:08:55 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 42 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"Starting app","service":"scalable-api"}
+{"level":"info","message":"::1 - - [12/Sep/2025:21:20:15 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"scalable-api"}
+{"level":"info","message":"Starting app","service":"scalable-api"}
+{"level":"info","message":"::1 - - [12/Sep/2025:21:20:26 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"scalable-api"}
+{"level":"info","message":"Starting app","service":"scalable-api"}
+{"level":"info","message":"::1 - - [12/Sep/2025:21:20:39 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:46:08 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:47:49 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:47:49 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:47:49 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:47:49 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:47:50 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:47:50 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:47:50 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:47:50 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:47:50 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:47:51 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:47:51 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:47:52 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:47:52 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:47:53 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:47:53 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:47:53 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:48:04 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:48:04 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:48:05 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:48:05 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:48:05 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:48:05 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:48:05 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:48:06 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:48:06 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:48:06 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:50:28 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:50:37 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:50:37 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:50:37 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:50:37 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:50:37 +0000] \"GET /health HTTP/1.1\" 429 97 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:50:37 +0000] \"GET /health HTTP/1.1\" 429 97 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:50:37 +0000] \"GET /health HTTP/1.1\" 429 97 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:50:38 +0000] \"GET /health HTTP/1.1\" 429 97 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:53:01 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:53:12 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:53:12 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:53:12 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:53:13 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:53:13 +0000] \"GET /health HTTP/1.1\" 429 97 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:53:13 +0000] \"GET /health HTTP/1.1\" 429 97 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:53:13 +0000] \"GET /health HTTP/1.1\" 429 97 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:53:13 +0000] \"GET /health HTTP/1.1\" 429 97 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:55:31 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:55:39 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:55:39 +0000] \"GET /health HTTP/1.1\" 200 73 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:55:39 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:55:39 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:55:39 +0000] \"GET /health HTTP/1.1\" 429 97 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:55:39 +0000] \"GET /health HTTP/1.1\" 429 97 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:55:45 +0000] \"GET /health HTTP/1.1\" 429 97 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"id":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"scalable-api","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [13/Sep/2025:08:55:46 +0000] \"GET /health HTTP/1.1\" 429 97 \"-\" \"HTTPie\"","service":"scalable-api"}
+{"level":"info","message":"Starting app","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:09:04:36 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"scalable-api"}
+{"level":"info","message":"::1 - - [13/Sep/2025:09:04:36 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"scalable-api"}

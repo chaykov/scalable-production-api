@@ -37,7 +37,9 @@ export const authenticateUser = async ({email, password}) => {
         }
 
         // Return user without password
+        // eslint-disable-next-line no-unused-vars
         const {password: _, ...userWithoutPassword} = existingUser;
+        // Possible to change _ to unused or ignore for password in const
         return userWithoutPassword;
     } catch (err) {
         logger.error(`Error authenticating user: ${err}`);
